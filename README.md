@@ -43,7 +43,7 @@ This project provides a complete task queue solution for VM management operation
 
 Here's how a typical VM launch request flows through the system:
 
-![](./diagrams/2.svg)
+![](./diagrams/2.png)
 
 ## Deployment Guide
 
