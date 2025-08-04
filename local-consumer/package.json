@@ -1,0 +1,19 @@
+{
+  "name": "vm-local-consumer",
+  "version": "1.0.0",
+  "description": "Simple Local Consumer for VM Management",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}

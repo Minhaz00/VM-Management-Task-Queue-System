@@ -1,0 +1,17 @@
+name = "vm-consumer-worker"
+main = "src/index.ts"
+compatibility_date = "2024-08-04"
+
+[vars]
+ENVIRONMENT = "production"
+
+[[kv_namespaces]]
+binding = "TASK_BUFFER"
+id = "c0de6a4a448d4b65a7cf1f6dd252d699"
+
+[[queues.consumers]]
+queue = "vm-task-queue"
+max_batch_size = 10
+max_batch_timeout = 30
+max_retries = 3
+dead_letter_queue = "vm-task-dlq"
