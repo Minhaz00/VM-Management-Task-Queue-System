@@ -138,17 +138,17 @@ curl https://vm-consumer-worker.your-subdomain.workers.dev/health
 
 ```bash
 curl -X POST https://vm-api-worker.your-subdomain.workers.dev/vm/tasks \
-  -H "Content-Type: application/json" \
-  -d '{
-    "type": "launch_vm",
-    "payload": {
-      "vmName": "test-vm-001",
-      "vmConfig": {
-        "kernel": "/opt/arrakis/vmlinux.bin",
-        "rootfs": "/opt/arrakis/rootfs.ext4"
-      }
-    }
-  }'
+-H "Content-Type: application/json" \
+-d '{
+  "type": "launch_vm",
+  "payload": {
+    "vmName": "test-vm-001",
+    "vmConfig": {
+      "memory": "2G"
+    },
+    "targetServer": "production"
+  }
+}'
 ```
 
 Expected response:

@@ -43,7 +43,7 @@ class VMConsumer {
     while (this.isRunning) {
       try {
         await this.processTasks();
-        await this.sleep(5000); // Poll every 5 seconds
+        await this.sleep(1000); // Poll every 1 seconds
       } catch (error) {
         if (error instanceof Error) {
           console.error('[ERROR] Polling error:', error.message);
