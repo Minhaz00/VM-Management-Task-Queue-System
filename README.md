@@ -2,6 +2,8 @@
 
 A scalable, distributed VM management system built with Cloudflare Workers and Arrakis. This system allows you to manage VMs through a REST API with reliable task processing using Cloudflare's global infrastructure.
 
+![alt text](./diagrams/image.png)
+
 ## Introduction
 
 This project provides a complete task queue solution for VM management operations. It decouples VM requests from execution, allowing for reliable, scalable, and asynchronous VM operations on your bare metal servers.
