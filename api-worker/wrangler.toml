@@ -5,9 +5,10 @@ compatibility_date = "2024-08-04"
 [vars]
 ENVIRONMENT = "production"
 
-[[kv_namespaces]]
-binding = "TASK_STORAGE"
-id = "c67dfbb59ba8497898d17302c19c6405"
+[[d1_databases]]
+binding = "DB"
+database_name = "vm_management"
+database_id = "d23cc0b7-9983-419b-a3ea-38f03f2fcff9"
 
 [[queues.producers]]
 queue = "vm-task-queue"

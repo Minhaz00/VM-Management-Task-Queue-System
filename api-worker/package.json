@@ -1,12 +1,17 @@
 {
-  "name": "vm-api-worker",
-  "version": "1.0.0",
-  "description": "API Worker for VM Management Task Queue System",
+  "name": "vm-api-worker-d1",
+  "version": "2.0.0",
+  "description": "VM API Worker with D1 Database",
   "main": "src/index.ts",
   "scripts": {
+    "build": "wrangler deploy --dry-run --outdir dist",
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "tail": "wrangler tail"
+    "tail": "wrangler tail",
+    "db:migrate": "wrangler d1 migrations apply vm_management",
+    "db:migrate:prod": "wrangler d1 migrations apply vm_management --remote",
+    "db:reset": "wrangler d1 migrations apply vm_management --local",
+    "db:shell": "wrangler d1 execute vm_management --command"
   },
   "dependencies": {
     "hono": "^4.5.0",
